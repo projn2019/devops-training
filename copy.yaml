@@ -1,0 +1,11 @@
+---
+- hosts: web
+  tasks:
+   - name: nginx with copy
+     copy:
+      src: copy.html
+      dest: /var/www/html/copy.html
+   - name: nginx with template
+     template:
+      src: copy.html
+      dest: /var/www/html/copytemplate.html
