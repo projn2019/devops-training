@@ -1,0 +1,8 @@
+---
+- hosts: web
+  tasks:
+   - name: file creation
+     file:
+      name: /tmp/playbook-cr/
+      state: present
+      recurse:true
