@@ -1,0 +1,11 @@
+- hosts: web
+  tasks:
+   - name: user creation
+     user:
+       name: pro1
+       state: present
+   - name: file creation
+     file:
+       name: /tmp/playbook-cr1/
+       state: directory
+       recurse: true
